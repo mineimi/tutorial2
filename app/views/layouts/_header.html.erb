@@ -1,10 +1,15 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "sample app", root_path, id:"logo" %>
+    <%= link_to "sample app", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
         <li><%= link_to "Home",   root_path %></li>
         <li><%= link_to "Help",   help_path %></li>
+=======
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+>>>>>>> advanced-login
         <% if logged_in? %>
           <li><%= link_to "Users", '#' %></li>
           <li class="dropdown">
@@ -13,16 +18,26 @@
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "Profile", current_user %></li>
+<<<<<<< HEAD
               <li><%= link_to "Setting", '#' %></li>
+=======
+              <li><%= link_to "Settings", '#' %></li>
+>>>>>>> advanced-login
               <li class="divider"></li>
               <li>
                 <%= link_to "Log out", logout_path, method: :delete %>
               </li>
             </ul>
           </li>
+<<<<<<< HEAD
           <% else %>
             <li><%= link_to "Log in", login_path %></li>
           <% end %>
+=======
+        <% else %>
+          <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+>>>>>>> advanced-login
       </ul>
     </nav>
   </div>
